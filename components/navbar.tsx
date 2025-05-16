@@ -27,7 +27,7 @@ const LEFT_NAVLINKS = [
 		href: `/playbook${playbook_routes[0].href}`,
 	},
 	{
-		title: "Awesome Psyop",
+		title: "Awesome Meme",
 		href: "/awesome-psyop",
 	},
 ];

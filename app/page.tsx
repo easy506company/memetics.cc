@@ -11,7 +11,7 @@ export default function Home() {
         target="_blank"
         className="mb-5 sm:text-lg flex items-center gap-2 underline underline-offset-4 sm:-mt-12"
       >
-        Under construction. Find us on X.{" "}
+        قيد الإنشاء. تجدنا على X.{" "}
         <MoveUpRightIcon className="w-4 h-4 font-extrabold" />
       </Link>
       <h1 className="text-[1.80rem] leading-8 sm:px-8 md:leading-[4.5rem] font-bold mb-4 sm:text-6xl text-center sm:text-left">
@@ -29,7 +29,7 @@ export default function Home() {
             size: "lg"
           })}
         >
-          Read Articles
+          قراءة المقالات
         </Link>
         <Link
           href={`/library${library_routes[0].href}`}
@@ -39,29 +39,19 @@ export default function Home() {
             size: "lg",
           })}
         >
-          Enter Library
+          ادخل المكتبة
         </Link>
 
       </div>
       <span className="flex flex-col items-start text-left text-muted-foreground text-sm mt-5 -mb-12 max-[800px]:mb-12">
         <span className="font-semibold mb-2">
-          what&apos;s new:
+         ما الجديد:
         </span>
         <span className="font-semibold mb-2">
           v{process.env.APP_VERSION}
         </span>
-        <Link href="/articles/20250506-your-mind-monetized" className="hover:underline">
-          - featured article: mind defender
-        </Link>
-
-        <span className="font-semibold mb-2 mt-2">
-          v0.1.3
-        </span>
-        <Link href="/library/exploitative-growth-and-platform-abuse/black-grey-hat-growth-hacking/black-hat-marketing" className="hover:underline">
-          - breakdown: social proof dender.
-        </Link>
-        <Link href="/library/user-influence-and-retention-engineering/retention-and-lock-in-tactics/friction-based-churn-suppression" className="hover:underline">
-          - breakdown: defender cancellation flows.
+        <Link href="/">
+          - نحن على الهواء مباشرة.
         </Link>
       </span>
     </div>
