@@ -8,11 +8,11 @@ export default function About() {
                 </h1> */}
 
                 <p>
-                    We&apos;re building. Stay tuned.</p>
+                    نحن نبني. ترقبوا.</p>
                 <p className="text-muted-foreground text-md font-medium mb-4">
                     x:{' '}
                     <Link
-                        href="https://x.com/darkpatterns"
+                        href="https://x.com/defenderOfSelf"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-muted-foreground text-md font-medium mb-4"

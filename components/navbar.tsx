@@ -1,6 +1,5 @@
 import { ModeToggle } from "@/components/theme-toggle";
 import { TwitterIcon, TerminalIcon, GithubIcon } from "lucide-react";
-import { playbook_routes } from "@/lib/playbook-routes-config";
 import Link from "next/link";
 import { buttonVariants } from "./ui/button";
 import Anchor from "./anchor";
@@ -11,20 +10,16 @@ import { SheetClose } from "@/components/ui/sheet";
 
 const LEFT_NAVLINKS = [
 	{
-		title: "Services",
+		title: "خدمات",
 		href: "/services",
 	},
 	{
-		title: "Articles",
+		title: "المقالات",
 		href: "/articles",
 	},
 	{
-		title: "Exploits Library",
+		title: "المكتبة المفتوحة",
 		href: `/library${library_routes[0].href}`,
-	},
-	{
-		title: "Ethical Playbook",
-		href: `/playbook${playbook_routes[0].href}`,
 	},
 	{
 		title: "Awesome Meme",
@@ -34,11 +29,11 @@ const LEFT_NAVLINKS = [
 
 const RIGHT_NAVLINKS = [
 	{
-		title: "Blog",
+		title: "مدونة",
 		href: "/blog",
 	},
 	{
-		title: "About",
+		title: "عن",
 		href: "/about",
 	},
 
@@ -77,7 +72,7 @@ export function Navbar() {
 					<div className="flex items-center justify-between sm:gap-2">
 						<div className="flex ml-4 sm:ml-0">
 							<Link
-								href="https://x.com/darkpatterns"
+								href="https://x.com/defenderofbasic"
 								className={buttonVariants({
 									variant: "ghost",
 									size: "icon",
@@ -86,7 +81,7 @@ export function Navbar() {
 								<TwitterIcon className="h-[1.1rem] w-[1.1rem]" />
 							</Link>
 							<Link
-								href="https://github.com/memetics"
+								href="https://github.com/rook2root"
 								className={buttonVariants({
 									variant: "ghost",
 									size: "icon",
@@ -107,7 +102,7 @@ export function Logo() {
 	return (
 		<Link href="/" className="flex items-center gap-2.5">
 			<TerminalIcon className="w-6 h-6 text-muted-foreground" strokeWidth={2} />
-			<h2 className="text-md font-bold font-code">memetics</h2>
+			<h2 className="text-md font-bold font-code">الميمات</h2>
 		</Link>
 	);
 }
@@ -116,7 +111,7 @@ export function NavMenu({ navLinks = ALL_NAVLINKS, isSheet = false }) {
 	return (
 		<>
 			{navLinks.map((item) => {
-				const isImportant = item.title === "Awesome Psyop";
+				const isImportant = item.title === "Awesome Meme";
 				const Comp = (
 					<Anchor
 						key={item.title + item.href}
