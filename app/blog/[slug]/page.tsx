@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const res = await getInsightsFrontmatter(slug, "blog");
   if (!res) return {};
   const { title, description, cover } = res;
-  const url = `https://rook2root.co/blog/${slug}`;
+  const url = `https://memetics.co/blog/${slug}`;
 
   return {
     title,

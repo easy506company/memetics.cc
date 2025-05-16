@@ -10,7 +10,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "rook2root - Blog",
+  title: "memetics - Blog",
 };
 
 export default async function BlogIndexPage() {

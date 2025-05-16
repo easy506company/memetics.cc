@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!res) return {};
 
   const { title, description, cover } = res;
-  const url = `https://rook2root.co/articles/${slug}`;
+  const url = `https://memetics.co/articles/${slug}`;
 
   return {
     title,

@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://rook2root.co',
+  siteUrl: 'https://memetics.co',
   generateRobotsTxt: true,
   sitemapSize: 5000,
   exclude: ['/404', '/500'],
