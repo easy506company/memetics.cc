@@ -12,7 +12,7 @@ export default function About() {
                 <p className="text-muted-foreground text-md font-medium mb-4">
                     x:{' '}
                     <Link
-                        href="https://x.com/defenderOfSelf"
+                        href="https://x.com/cogitovirus3"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-muted-foreground text-md font-medium mb-4"

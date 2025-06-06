@@ -26,7 +26,7 @@ export default function About() {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        @defenderOfSelf
+                        @darkpatterns
                     </Link>
                 </p>
                 <div className="mt-8 flex flex-col items-center gap-2">
