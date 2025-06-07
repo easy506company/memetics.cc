@@ -51,7 +51,13 @@ export default function Home() {
           v{process.env.APP_VERSION}
         </span>
         <Link href="/">
-          - نحن على الهواء مباشرة.
+          - استعادة
+        </Link>
+        <span className="font-semibold mb-2">
+          v0.1.0
+        </span>
+        <Link href="/">
+          - نحن على الهواء مباشرة
         </Link>
       </span>
     </div>
