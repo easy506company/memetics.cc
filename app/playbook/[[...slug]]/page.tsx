@@ -1,20 +1,21 @@
 import DocsBreadcrumb from "@/components/docs-breadcrumb";
 import Pagination from "@/components/pagination";
 import Toc from "@/components/toc";
-import { playbook_routes } from "@/lib/playbook-routes-config";
+// import { playbook_routes } from "@/lib/playbook-routes-config";
 import { notFound } from "next/navigation";
 import { getCompiledContentForSlug, getDocFrontmatter } from "@/lib/markdown";
 import { Typography } from "@/components/typography";
 
 
-type PageProps = {
+// In Next.js 15, params and searchParams are Promises in server components.
+// Update the type accordingly and await them inside the function.
+
+type PagePropsAsync = {
   params: Promise<{ slug: string[] }>;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  searchParams?: Promise<any>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-
-export default async function PlaybookPage({ params }: PageProps) {
+export default async function PlaybookPage({ params }: PagePropsAsync) {
   const { slug = [] } = await params;
 
   const pathName = slug.join("/");
@@ -44,7 +45,7 @@ export default async function PlaybookPage({ params }: PageProps) {
   );
 }
 
-export async function generateMetadata({ params }: PageProps) {
+export async function generateMetadata({ params }: PagePropsAsync) {
   const { slug = [] } = await params;
   const pathName = slug.join("/");
   const res = await getDocFrontmatter(pathName, "playbook");
@@ -56,7 +57,7 @@ export async function generateMetadata({ params }: PageProps) {
 
   return {
     title,
-    description: metaDescription, // Use metaDescription for SEO
+    description: metaDescription,
     alternates: {
       canonical: canonicalUrl,
     },
@@ -64,7 +65,11 @@ export async function generateMetadata({ params }: PageProps) {
 }
 
 export function generateStaticParams() {
-  return playbook_routes.map((item) => ({
-    slug: item.href.split("/").slice(1),
-  }));
+  return [
+    { slug: ["intro"] },
+    { slug: ["getting-started"] },
+    { slug: ["examples", "dark-patterns"] },
+    // dodaj ręcznie inne znane ścieżki
+  ];
 }
+

@@ -2,6 +2,12 @@
 
 ## Getting Started
 
+## Install
+
+npm install next react react-dom typescript @types/react @types/node
+
+
+
 run the development server:
 
 ```bash
