@@ -9,34 +9,33 @@ import { SheetClose } from "@/components/ui/sheet";
 // import AlgoliaSearch from "./algolia-search";
 
 const LEFT_NAVLINKS = [
-	{
-		title: "خدمات",
-		href: "/services",
-	},
-	{
-		title: "المقالات",
-		href: "/articles",
-	},
-	{
-		title: "المكتبة المفتوحة",
-		href: `/library${library_routes[0].href}`,
-	},
-	{
-		title: "Awesome Meme",
-		href: "/awesome-psyop",
-	},
+  {
+	title: "Services",
+	href: "/services",
+  },
+  {
+	title: "Articles",
+	href: "/articles",
+  },
+  {
+	title: "Open Library",
+	href: `/library${library_routes[0].href}`,
+  },
+  {
+	title: "Awesome Meme",
+	href: "/awesome-psyop",
+  },
 ];
 
 const RIGHT_NAVLINKS = [
-	{
-		title: "مدونة",
-		href: "/blog",
-	},
-	{
-		title: "عن",
-		href: "/about",
-	},
-
+//   {
+// 	title: "Blog",
+// 	href: "/blog",
+//   },
+  {
+	title: "About",
+	href: "/about",
+  },
 ];
 
 const ALL_NAVLINKS = [...LEFT_NAVLINKS, ...RIGHT_NAVLINKS];
@@ -102,7 +101,7 @@ export function Logo() {
 	return (
 		<Link href="/" className="flex items-center gap-2.5">
 			<TerminalIcon className="w-6 h-6 text-muted-foreground" strokeWidth={2} />
-			<h2 className="text-md font-bold font-code">الميمات</h2>
+   <h2 className="text-md font-bold font-code">Memetics</h2>
 		</Link>
 	);
 }

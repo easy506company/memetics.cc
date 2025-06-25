@@ -8,7 +8,7 @@ export default function About() {
                 </h1> */}
 
                 <p>
-                    نحن نبني. ترقبوا.</p>
+                    We are building. Stay tuned.</p>
                 <p className="text-muted-foreground text-md font-medium mb-4">
                     x:{' '}
                     <Link
