@@ -71,7 +71,7 @@ export function Navbar() {
 					<div className="flex items-center justify-between sm:gap-2">
 						<div className="flex ml-4 sm:ml-0">
 							<Link
-								href="https://x.com/cogitovirus3"
+								href="https://x.com/darkpatterns"
 								className={buttonVariants({
 									variant: "ghost",
 									size: "icon",
@@ -80,7 +80,7 @@ export function Navbar() {
 								<TwitterIcon className="h-[1.1rem] w-[1.1rem]" />
 							</Link>
 							<Link
-								href="https://github.com/rook2root"
+								href="https://github.com/easy506company"
 								className={buttonVariants({
 									variant: "ghost",
 									size: "icon",
