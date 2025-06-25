@@ -20,7 +20,7 @@ const monoFont = Space_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "memetics - Business is Business",
+  title: "memetics - Ideas are contagious",
   metadataBase: new URL("https://memetics.co/"),
   description:
     "Explore competitive strategy, growth tactics, and backend plays — documented, indexed, served cold. memetics captures real-world business moves.",
