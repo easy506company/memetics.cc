@@ -12,7 +12,7 @@ export default function About() {
                     The science of self-replicating meaning
                 </p>
                 <p>Ideas behave like living systems — they travel, evolve, and fight for mental space.</p>
-                <p>Memetics isn't just metaphor. It's an exploration of the deep mechanics of culture.</p>
+                <p>Memetics isn&apos;t just metaphor. It&apos;s an exploration of the deep mechanics of culture.</p>
                 <p>We collect, observe, and chart the silent architecture behind belief, myth, and tradition.</p>
                 <p>Not for control. Not for judgment. But to understand — and marvel.</p>
                 <p className="mt-4 mb-4">

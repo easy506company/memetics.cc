@@ -23,7 +23,7 @@ const LEFT_NAVLINKS = [
   },
   {
 	title: "Awesome Meme",
-	href: "/awesome-psyop",
+	href: "/awesome-meme",
   },
 ];
 

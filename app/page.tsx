@@ -19,8 +19,7 @@ export default function Home() {
       </h1>
       <p className="mb-8 md:text-lg text-base  max-w-[1200px] text-muted-foreground text-center sm:text-left">
 Ideas are viral. We track how they replicate, evolve, and hijack perception across cultures and platforms.
-
-Ą      </p>
+      </p>
       <div className="sm:flex sm:flex-row grid grid-cols-2 items-center sm;gap-5 gap-3 mb-8">
         <Link
           href="/articles"
@@ -46,7 +45,7 @@ Ideas are viral. We track how they replicate, evolve, and hijack perception acro
       </div>
       <span className="flex flex-col items-start text-left text-muted-foreground text-sm mt-5 -mb-12 max-[800px]:mb-12">
         <span className="font-semibold mb-2">
-          What's new:
+          What&apos;s new:
         </span>
         <span className="font-semibold mb-2">
           v{process.env.APP_VERSION}
@@ -58,7 +57,7 @@ Ideas are viral. We track how they replicate, evolve, and hijack perception acro
           v0.1.0
         </span>
         <Link href="/">
-          - We are live
+          - We&apos;re live
         </Link>
       </span>
     </div>

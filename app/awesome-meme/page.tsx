@@ -1,5 +1,5 @@
 'use client';
-import Content from './awesome-psyops-temp.mdx';
+import Content from './awesome-meme-temp.mdx';
 
 export default function Page() {
   return (
